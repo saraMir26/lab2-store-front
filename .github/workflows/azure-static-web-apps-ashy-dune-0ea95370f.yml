@@ -16,10 +16,10 @@ jobs:
     name: Build and Deploy Job
     # API URL for the order-service
     env:
-VUE_APP_ORDER_SERVICE_URL: https://lab3-order-service-d8czc8g8g4dcaqag.canadacentral-01.azurewebsites.net
+      VUE_APP_ORDER_SERVICE_URL: https://lab3-order-service-d8czc8g8g4dcaqag.canadacentral-01.azurewebsites.net
 
-# API URL for the product-service
-VUE_APP_PRODUCT_SERVICE_URL: https://lab3-product-service-cbcmh5fcbbaqb7ce.canadacentral-01.azurewebsites.net
+      # API URL for the product-service
+      VUE_APP_PRODUCT_SERVICE_URL: https://lab3-product-service-cbcmh5fcbbaqb7ce.canadacentral-01.azurewebsites.net
     steps:
       - uses: actions/checkout@v3
         with:
