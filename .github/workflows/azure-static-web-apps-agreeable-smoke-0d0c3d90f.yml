@@ -14,6 +14,13 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
+    #API URL for the order Service:
+    env:
+      VUE_APP_ORDER_API_URL: "https://ass1-order-service-c5ctfgcdaxh5f5fw.canadacentral-01.azurewebsites.net/"
+    
+    # API URL for the product Service:
+      VUE_APP_PRODUCT_API_URL: "https://product-service-h8gsc5gyeaa9aqaq.canadacentral-01.azurewebsites.net/"
+
     steps:
       - uses: actions/checkout@v3
         with:
