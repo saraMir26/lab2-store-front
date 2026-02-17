@@ -17,6 +17,7 @@ jobs:
     env: 
           VUE_APP_ORDER_SERVICE_URL: https://ass1-order-service-c5ctfgcdaxh5f5fw.canadacentral-01.azurewebsites.net/
           VUE_APP_PRODUCT_SERVICE_URL: https://product-service-h8gsc5gyeaa9aqaq.canadacentral-01.azurewebsites.net/
+          
     steps:
       - uses: actions/checkout@v3
         with:
