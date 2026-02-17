@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     env: 
-          VUE_APP_ORDER_SERVICE_URL: https://ass1-order-service-c5ctfgcdaxh5f5fw.canadacentral-01.azurewebsites.net/
+          VUE_APP_ORDER_SERVICE_URL: https://midterm-order-service-h6a2d5edbna0dzge.canadacentral-01.azurewebsites.net/
           VUE_APP_PRODUCT_SERVICE_URL: https://product-service-h8gsc5gyeaa9aqaq.canadacentral-01.azurewebsites.net/
           
     steps:
